@@ -5,6 +5,7 @@ Python Script that sorts dowloaded files into different folders based on file ex
 
 ## Features List
 
+- [ ] Ignore on_modified event when files are beintg dowloaded (ignore .crdownload)
 - [ ] Automatic launch at Windows Startup
 - [ ] Running in background
   
@@ -12,14 +13,14 @@ Python Script that sorts dowloaded files into different folders based on file ex
 
 Categories (destination system folders): 
 
-- [ ] Documents 
+- [x] Documents 
   - .pdf
   - .txt
   - .doc & .docx & .odt
   - .xls & .xlsx
   - .ppt & .pptx
 
-- [ ] Videos
+- [x] Videos
   - .mp4
   - .avi
   - .m4v
@@ -30,12 +31,12 @@ Categories (destination system folders):
   - .h264
 
 
-- [ ] Images
+- [x] Images
   - .jpg & .jpeg
   - .png
   - .gif
 
-- [ ] Music
+- [x] Music
   - .mp3 
   - .mpa
   - .wav & .wma
