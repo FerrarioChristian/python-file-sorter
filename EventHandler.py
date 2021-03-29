@@ -17,7 +17,7 @@ class EventHandler(FileSystemEventHandler):
             
             for destination, path in self.json_dict['destinations'].items():
                 if file_name.split('.')[1] in self.json_dict[destination]:
-                    self.logger.log("File " + file_name + " moved in " + destination +" (?)")
                     dest = path + file_name
                     move(src, dest)
+                    self.logger.log("File " + file_name + " moved in " + destination +" (?)")
                     break
