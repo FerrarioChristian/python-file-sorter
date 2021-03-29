@@ -37,6 +37,10 @@
         "wma"
     ],
 
+    "Ignore":[
+        "crdownload"
+    ],
+
     "destinations": {
         "Documents": "C:/Users/chrif/Documents/",
         "Videos": "D:/Video/",
