@@ -41,7 +41,7 @@ Categories (destination system folders):
   - .mpa
   - .wav & .wma
 
-- [ ] Left in Dowloads
+- [x] Left in Dowloads
   - .zip & .7z & .rar
   - .exe
   - .msi
