@@ -42,7 +42,4 @@ Categories (destination system folders):
   - .wav & .wma
 
 - [x] Left in Dowloads
-  - .zip & .7z & .rar
-  - .exe
-  - .msi
   - everything else
