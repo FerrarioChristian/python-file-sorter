@@ -5,7 +5,7 @@ Python Script that sorts dowloaded files into different folders based on file ex
 
 ## Features List
 
-- [ ] Ignore on_modified event when files are being dowloaded (ignore .crdownload)
+- [x] Ignore on_modified event when files are being dowloaded (ignore .crdownload)
 - [ ] Automatic launch at Windows Startup
 - [ ] Running in background
 - [ ] Handle Exceptions
