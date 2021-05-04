@@ -9,6 +9,7 @@ Python Script that sorts dowloaded files into different folders based on file ex
 - [ ] Automatic launch at Windows Startup
 - [ ] Running in background
 - [ ] Handle Exceptions
+- [ ] Modify Destinations
 
 
 Categories (destination system folders): 
