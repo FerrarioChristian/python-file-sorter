@@ -8,7 +8,7 @@ class EventHandler(FileSystemEventHandler):
     def __init__(self, observed_folder, destination_folder):
         self.observed_folder = observed_folder
         self.destination_folder = destination_folder
-        self.json_dict = load(open('destinations.json'))
+        self.json_dict = load(open(r'C:\Users\chrif\Documents\Developing\PythonFileSorter\destinations.json'))
         self.logger = Logger()
 
     def on_modified(self, event):
