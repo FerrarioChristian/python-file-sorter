@@ -1,8 +1,11 @@
 from EventHandler import EventHandler
 from time import sleep
 from watchdog.observers import Observer
+import AutoStart
 
-observed_folder = 'C:/Users/chrif/Downloads/Downloaded'
+AutoStart.add_to_startup()
+
+observed_folder = 'C:/Users/chrif/Downloads/Downloading'
 destination_folder = 'C:/Users/chrif/Downloads'
 
 handler = EventHandler(observed_folder, destination_folder)
