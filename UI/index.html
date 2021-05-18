@@ -7,18 +7,20 @@
       http-equiv="Content-Security-Policy"
       content="script-src 'self' 'unsafe-inline';"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body style="background: #fff1ff">
     <h1 class="title">PythonFileSorter</h1>
     <h2 class="subtitle">Modify Parameters</h2>
     <div class="container-left">
       <input
-        list="categories"
-        type="Category"
+        list="categories-list"
+        type="text"
         class="categories"
+        id="categories"
         placeholder="Category"
       />
-      <datalist id="categories">
+      <datalist id="categories-list">
         <option value="Documents"></option>
         <option value="Images"></option>
         <option value="Videos"></option>
@@ -27,17 +29,17 @@
       </datalist>
 
       <h3>Path:</h3>
-      <input type="text" />
-      <h3>Path:</h3>
-      <input type="text" />
-      <i class="plus"></i>
+      <input type="text" id="path" />
+      <h3>Category:</h3>
+      <input type="text" id="category" />
+      <i class="plus" id="add-category"></i>
     </div>
     <div class="container-right">
       <div class="container-extensions">
         <input type="text" />
-        <i class="plus"></i>
-        <i class="left"></i>
-        <i class="right"></i>
+        <i class="plus" id="add-extension"></i>
+        <i class="left" id="scroll-left"></i>
+        <i class="right" id="scroll-right"></i>
       </div>
       <button class="save" id="save">Save</button>
       <button class="delete" id="delete"><i class="trash"> </i></button>
