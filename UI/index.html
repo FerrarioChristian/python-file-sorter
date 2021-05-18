@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PythonFileSorter</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
+  <body style="background: #fff1ff">
+    <h1 class="title">PythonFileSorter</h1>
+    <h2 class="subtitle">Modify Parameters</h2>
+    <div class="container-left">
+      <input
+        list="categories"
+        type="Category"
+        class="categories"
+        placeholder="Category"
+      />
+      <datalist id="categories">
+        <option value="Documents"></option>
+        <option value="Images"></option>
+        <option value="Videos"></option>
+        <option value="Downloads"></option>
+        <option value="Music"></option>
+      </datalist>
+
+      <h3>Path:</h3>
+      <input type="text" />
+      <h3>Path:</h3>
+      <input type="text" />
+      <i class="plus"></i>
+    </div>
+    <div class="container-right">
+      <div class="container-extensions">
+        <input type="text" />
+        <i class="plus"></i>
+        <i class="left"></i>
+        <i class="right"></i>
+      </div>
+      <button class="save" id="save">Save</button>
+      <button class="delete" id="delete"><i class="trash"> </i></button>
+    </div>
+  </body>
+</html>
