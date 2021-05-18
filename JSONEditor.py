@@ -11,7 +11,6 @@ def delCategory(category):
     del json_dict[category] 
     del json_dict['destinations'][category]
 
-
 def addExtensions(category, extensions):
     for extension in extensions:
         json_dict[category].append(extension)
