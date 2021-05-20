@@ -9,40 +9,42 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background: #fff1ff">
+  <body>
     <h1 class="title">PythonFileSorter</h1>
     <h2 class="subtitle">Modify Parameters</h2>
-    <div class="container-left">
-      <input
-        list="categories-list"
-        type="text"
-        class="categories"
-        id="categories"
-        placeholder="Category"
-      />
-      <datalist id="categories-list">
-        <option value="Documents"></option>
-        <option value="Images"></option>
-        <option value="Videos"></option>
-        <option value="Downloads"></option>
-        <option value="Music"></option>
-      </datalist>
+    <div class="container">
+      <div class="container-left">
+        <input
+          list="categories-list"
+          type="text"
+          class="categories"
+          id="categories"
+          placeholder="Category"
+        />
+        <datalist id="categories-list">
+          <option value="Documents"></option>
+          <option value="Images"></option>
+          <option value="Videos"></option>
+          <option value="Downloads"></option>
+          <option value="Music"></option>
+        </datalist>
 
-      <h3>Path:</h3>
-      <input type="text" id="path" />
-      <h3>Category:</h3>
-      <input type="text" id="category" />
-      <i class="plus" id="add-category"></i>
-    </div>
-    <div class="container-right">
-      <div class="container-extensions">
-        <input type="text" />
-        <i class="plus" id="add-extension"></i>
-        <i class="left" id="scroll-left"></i>
-        <i class="right" id="scroll-right"></i>
+        <h3>Path:</h3>
+        <input type="text" class="input input-path" id="input-path" placeholder="C:\Users\user\..." />
+        <h3>Category:</h3>
+        <input type="text" class="input input-category" id="input-category" placeholder="Add Category"/>
+        <i class="plus" id="add-category"></i>
       </div>
-      <button class="save" id="save">Save</button>
-      <button class="delete" id="delete"><i class="trash"> </i></button>
+      <div class="container-right">
+        <div class="container-extensions">
+          <input type="text" class="input input-extension" id="input-extension" />
+          <i class="plus" id="add-extension"></i>
+          <i class="left" id="scroll-left"></i>
+          <i class="right" id="scroll-right"></i>
+        </div>
+        <button class="save" id="save">Save</button>
+        <button class="delete" id="delete"><i class="trash"> </i>Delete</button>
+      </div>
     </div>
   </body>
 </html>
