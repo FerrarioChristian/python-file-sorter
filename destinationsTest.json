@@ -1,0 +1,29 @@
+{
+  "Documents": [
+    "pdf",
+    "doc",
+    "docx",
+    "odt",
+    "txt",
+    "xls",
+    "xlsx",
+    "ppt",
+    "pptx"
+  ],
+
+  "Videos": ["mp4", "avi", "m4v", "mpg", "mpeg", "wmv", "mkv", "mov", "h264"],
+
+  "Images": ["jpg", "jpeg", "png", "gif"],
+
+  "Music": ["mp3", "mpa", "wav", "wma"],
+
+  "Ignore": ["crdownload"],
+
+  "destinations": {
+    "Documents": "C:/Users/chrif/Documents/",
+    "Videos": "D:/Video/",
+    "Images": "C:/Users/chrif/Images/",
+    "Music": "C:/Users/chrif/Music/",
+    "Downloads": "C:/Users/chrif/Downloads/"
+  }
+}

@@ -6,9 +6,8 @@ import AutoStart
 AutoStart.add_to_startup()
 
 observed_folder = 'C:/Users/chrif/Downloads/Downloading'
-destination_folder = 'C:/Users/chrif/Downloads'
 
-handler = EventHandler(observed_folder, destination_folder)
+handler = EventHandler(observed_folder)
 
 observer = Observer()
 observer.schedule(handler, observed_folder, recursive=False)
