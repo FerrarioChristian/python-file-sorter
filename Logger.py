@@ -1,10 +1,14 @@
+from AutoStart import USERNAME
 from os import system
 from datetime import datetime
+import getpass #X
 class Logger:
     def __init__(self):
-        system("mkdir C:\\Users\\chrif\\AppData\\Local\\PythonFileSorter")
+        USERNAME = getpass.getuser() #X
+        system(r"mkdir C:\Users\%s\AppData\Local\PythonFileSorter" % USERNAME) #X
 
     def log(self, logmessage):
-        f = open("C:/Users/chrif/AppData/Local/PythonFileSorter/log.log", "a")
+        USERNAME = getpass.getuser()
+        f = open(r"C:\Users\%s\AppData\Local\PythonFileSorter\log.log" % USERNAME, "a") #X
         f.write("[" + str(datetime.now()) + "]" + " " +  logmessage)
         f.close()

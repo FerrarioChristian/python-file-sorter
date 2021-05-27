@@ -1,6 +1,7 @@
 # only for windows
 import getpass
 from os import path
+
 USERNAME = getpass.getuser()
 
 def add_to_startup(file_path=""):
