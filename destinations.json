@@ -1,7 +1,7 @@
 {
   "config": {
-    "Default": "C:/Users/chrif/Downloads/",
-    "Observed": "C:/Users/chrif/Downloads/Downloading",
+    "Default": "C:/Users/#/Downloads/",
+    "Observed": "C:/Users/#/Downloads/Downloading",
     "Ignored": ["crdownload"]
   },
 
@@ -26,9 +26,9 @@
   },
 
   "destinations": {
-    "Documents": "C:/Users/chrif/Documents/",
-    "Videos": "D:/Video/",
-    "Images": "C:/Users/chrif/Pictures/",
-    "Music": "C:/Users/chrif/Music/"
+    "Documents": "C:/Users/#/Documents/",
+    "Videos": "C:Users/#/Video/",
+    "Images": "C:/Users/#/Pictures/",
+    "Music": "C:/Users/#/Music/"
   }
 }

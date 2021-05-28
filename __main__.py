@@ -1,18 +1,12 @@
 from EventHandler import EventHandler
-from time import sleep
 from watchdog.observers import Observer
-from json import load #X
-import AutoStart
-import getpass #X
+from time import sleep
+from json import load
 
-AutoStart.add_to_startup()
-
-USERNAME = getpass.getuser() #X
-
-json_dict = load(open(r'C:\Users\%s\Documents\PythonFileSorter\destinations.json' % USERNAME)) #X
+with open(r'C:\Program Files\PythonFileSorter\destinations.json') as json_file:
+    json_dict = load(json_file)
+    
 observed_folder = json_dict['config']['Observed']
-
-print(observed_folder)
 
 handler = EventHandler(observed_folder)
 

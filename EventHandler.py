@@ -1,19 +1,17 @@
-from AutoStart import USERNAME
-from json import load #X
+from json import load
 from shutil import move
 from os import listdir
 from watchdog.events import FileSystemEventHandler
-from Logger import Logger
-import getpass #X
+from datetime import datetime
+
 class EventHandler(FileSystemEventHandler):
     def __init__(self, observed_folder):
         self.observed_folder = observed_folder
-        USERNAME = getpass.getuser() #X
-        self.json_dict = load(open(r'C:\Users\%s\Documents\PythonFileSorter\destinations.json' % USERNAME)) #X
-        self.logger = Logger()
+        with open(r'C:\Program Files\PythonFileSorter\destinations.json') as json_file:
+            self.json_dict = load(json_file)
         self.found = False
 
-    def on_modified(self, event):
+    def on_any_event(self, event):
         for file_name in listdir(self.observed_folder):
             self.found = False
             src = self.observed_folder + '/' + file_name
@@ -23,10 +21,15 @@ class EventHandler(FileSystemEventHandler):
                         dest = path + file_name
                         move(src, dest)
                         self.found = True
-                        self.logger.log("File " + file_name + " moved in " + dest +" (?)")
+                        self.log("File \'" + file_name + "\' moved in \'" + dest +"\'")
                         break
                 if(self.found == False):
                     dest = self.json_dict['config']['Default'] + file_name
                     move(src, dest)
-                    self.logger.log("File " + file_name + " moved in " + dest +" (?)")
+                    self.log("File \'" + file_name + "\' moved in \'" + dest +"\'")
                     break
+
+    def log(self, logmessage):
+        self.f = open(r"C:\Program Files\PythonFileSorter\log.log", "a") 
+        self.f.write("[" + str(datetime.now()) + "]" + " " +  logmessage + "\n")
+        self.f.close()
