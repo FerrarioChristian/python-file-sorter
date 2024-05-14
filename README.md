@@ -43,3 +43,4 @@ Categories (destination system folders):
 
 - [x] Left in Dowloads
   - everything else
+![UI](https://github.com/FerrarioChristian/python-file-sorter/assets/45001982/203e3c67-74a1-4d09-a2af-a8a453ca9e96)
