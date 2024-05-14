@@ -44,5 +44,5 @@ Categories (destination system folders):
   - .wav & .wma
 
 - [x] Left in Dowloads
-  - everything else\
+  - everything else
 
