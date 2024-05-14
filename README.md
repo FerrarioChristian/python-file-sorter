@@ -1,6 +1,8 @@
 # PythonFileSorter
 Python Script that sorts dowloaded files into different folders based on file extensions.
 
+![UI](https://github.com/FerrarioChristian/python-file-sorter/assets/45001982/203e3c67-74a1-4d09-a2af-a8a453ca9e96)
+
 ## How To Setup
 
 ## Features List
@@ -42,5 +44,5 @@ Categories (destination system folders):
   - .wav & .wma
 
 - [x] Left in Dowloads
-  - everything else
-![UI](https://github.com/FerrarioChristian/python-file-sorter/assets/45001982/203e3c67-74a1-4d09-a2af-a8a453ca9e96)
+  - everything else\
+
