@@ -13,36 +13,33 @@ Python Script that sorts dowloaded files into different folders based on file ex
 - [ ] Modify Destinations
 
 
-Categories (destination system folders): 
+## Categories (destination system folders)
 
-- [x] Documents 
-  - .pdf
-  - .txt
-  - .doc & .docx & .odt
-  - .xls & .xlsx
-  - .ppt & .pptx
+### Documents
+- `.pdf`
+- `.txt`
+- `.doc`, `.docx`, `.odt`
+- `.xls`, `.xlsx`
+- `.ppt`, `.pptx`
 
-- [x] Videos
-  - .mp4
-  - .avi
-  - .m4v
-  - .mkv
-  - .mpg & .mpeg
-  - .wmv
-  - .mov
-  - .h264
+### Videos
+- `.mp4`
+- `.avi`
+- `.m4v`, `.mkv`
+- `.mpg`, `.mpeg`
+- `.wmv`
+- `.mov`
+- `.h264`
 
+### Images
+- `.jpg`, `.jpeg`
+- `.png`
+- `.gif`
 
-- [x] Images
-  - .jpg & .jpeg
-  - .png
-  - .gif
+### Music
+- `.mp3`
+- `.mpa`
+- `.wav`, `.wma`
 
-- [x] Music
-  - .mp3 
-  - .mpa
-  - .wav & .wma
-
-- [x] Left in Dowloads
-  - everything else
-
+### Left in Downloads
+- everything else
