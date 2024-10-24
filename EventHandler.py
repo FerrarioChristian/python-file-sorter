@@ -1,6 +1,6 @@
 from json import load
 from shutil import move
-from os import listdir
+from os import listdir, system
 from watchdog.events import FileSystemEventHandler
 from datetime import datetime
 
@@ -30,6 +30,7 @@ class EventHandler(FileSystemEventHandler):
                     break
 
     def log(self, logmessage):
-        self.f = open(r"C:\Program Files\PythonFileSorter\log.log", "a") 
+        system("mkdir C:\\Users\\chrif\\AppData\\Local\\PythonFileSorter")
+        self.f = open(r"C:/Users/chrif/AppData/Local/PythonFileSorter/log.log", "a") 
         self.f.write("[" + str(datetime.now()) + "]" + " " +  logmessage + "\n")
         self.f.close()

@@ -1,6 +1,6 @@
 from EventHandler import EventHandler
-from watchdog.observers import Observer
 from time import sleep
+from watchdog.observers import Observer
 from json import load
 
 with open(r'C:\Program Files\PythonFileSorter\destinations.json') as json_file:
